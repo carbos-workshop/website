@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="676px" height="422px" viewBox="0 0 676 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>logo-reflect</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="75%" cy="6.69487307%" fx="75%" fy="6.69487307%" r="120.875808%" gradientTransform="translate(0.750000,0.066949),scale(0.997041,1.000000),rotate(107.016469),translate(-0.750000,-0.066949)" id="radialGradient-1">
+            <stop stop-color="#FF5544" offset="0%"></stop>
+            <stop stop-color="#FF4340" offset="10%"></stop>
+            <stop stop-color="#FF1E38" offset="33%"></stop>
+            <stop stop-color="#FF0833" offset="51%"></stop>
+            <stop stop-color="#FF0031" offset="100%"></stop>
+        </radialGradient>
+        <ellipse id="path-2" cx="169" cy="168.5" rx="169" ry="168.5"></ellipse>
+        <radialGradient cx="37.3965811%" cy="16.6101507%" fx="37.3965811%" fy="16.6101507%" r="85.824873%" id="radialGradient-4">
+            <stop stop-color="#5D5D5D" offset="0%"></stop>
+            <stop stop-color="#3C3C3C" offset="15.2682274%"></stop>
+            <stop stop-color="#2D2D2D" offset="30%"></stop>
+            <stop stop-color="#252525" offset="51%"></stop>
+            <stop stop-color="#232323" offset="77.2273762%"></stop>
+            <stop stop-color="#333333" offset="92.5864089%"></stop>
+            <stop stop-color="#222222" offset="100%"></stop>
+        </radialGradient>
+        <ellipse id="path-5" cx="169" cy="168.5" rx="169" ry="168.5"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(-8.000000, -136.000000)">
+            <g id="logo-reflect" transform="translate(8.000000, 136.000000)">
+                <g id="Oval" transform="translate(507.000000, 210.500000) scale(-1, 1) translate(-507.000000, -210.500000) translate(338.000000, 42.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#radialGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                    <circle fill-opacity="0.200000003" fill="url(#radialGradient-4)" fill-rule="nonzero" mask="url(#mask-3)" cx="170.5" cy="167.5" r="172.5"></circle>
+                </g>
+                <g id="Oval-Copy" transform="translate(169.000000, 211.500000) scale(-1, 1) translate(-169.000000, -211.500000) translate(0.000000, 43.000000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#radialGradient-1)" fill-rule="nonzero" xlink:href="#path-5"></use>
+                    <circle id="Oval" fill-opacity="0.200000003" fill="url(#radialGradient-4)" fill-rule="nonzero" mask="url(#mask-6)" cx="170.5" cy="167.5" r="172.5"></circle>
+                </g>
+                <circle id="Oval" fill="url(#radialGradient-4)" fill-rule="nonzero" cx="337" cy="211" r="211"></circle>
+                <path d="M431,140.478294 L414.567147,153.097618 C396.643638,129.564972 368.621554,116.005725 339.110168,116.585708 C314.848815,116.259349 291.493172,125.821882 274.384849,143.086288 C256.646984,159.946854 246.802109,183.52128 247.262257,208.033739 C246.680544,232.22989 256.318954,255.545357 273.797961,272.224031 C291.612524,289.45197 315.59546,298.747492 340.325864,298.009515 C369.075146,298.472271 396.444246,285.663428 414.567147,263.264311 L431,275.883634 C420.748398,289.512056 407.219424,300.308699 391.67853,307.263685 C375.133019,314.558948 357.223075,318.216338 339.152089,317.99011 C305.615654,317.99011 278.227565,307.389879 256.987823,286.189415 C235.748081,264.988952 225.08629,238.1799 225.002449,205.762261 C224.871643,186.268977 229.983891,167.101279 239.8004,150.279302 C249.562561,133.425091 263.780955,119.609209 280.882533,110.360176 C298.197749,100.837332 317.646333,95.9005903 337.391426,96.0162113 C356.116048,95.714076 374.668931,99.638647 391.67853,107.499796 C407.395671,114.913851 420.939662,126.273052 431,140.478294 L431,140.478294 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
