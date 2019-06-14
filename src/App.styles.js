@@ -1,41 +1,56 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+let stripeHeight = 100;
 export const styles = makeStyles(theme => ({
   root: {
 
   },
   heroTextWrapper: {
     marginTop: '35vh',
-    marginBottom: '150px',
+    marginBottom: '175px',
     padding: `0 20% 0 10%`
   },
   heroImageWrapper: {
     opacity: '0.5',
     display: 'flex',
     paddingRight: theme.spacing(5),
-    marginTop: '-80px'
+    marginTop: `-${stripeHeight / 2}px`,
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '0px',
+    }
+    
   },
   heroParalaxWrapper: {
-    marginBottom: '-200px',
-    marginTop: '-200px',
+    marginBottom: `-${stripeHeight * 2}px`,
+    marginTop: `-${stripeHeight * 2}px`,
     display: 'flex',
     justifyContent: 'flex-end',
     overflow: 'hidden',
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: `-${stripeHeight}px`,
+      marginTop: `-${stripeHeight}px`,
+    },
   },
   heroParalaxLogo: {
     height: '400px',
+    [theme.breakpoints.down('sm')]: {
+      height: '180px'
+    },
   },
-  heroTransition: {
-    marginTop: '-200px',
-    width: '100%',
-    height: '0',
-    borderRight: '100vw solid transparent',
-    borderLeft: '0 solid transparent',
-    borderBottom: '200px solid #fff',
-    position: 'relative',
+  stripeDividerWrapper: {
+    marginTop: `-${stripeHeight * 2}px`,
+    height: `${stripeHeight * 2}px`,
+    overflow: 'hidden',
+  },
+  stripeDivider: {
+    boxShadow: '0px 3px 10px 5px rgba(0,0,0,0.51)',
+    height: `${stripeHeight * 2}px`,
+    width: '110%',
+    transform: 'translateY(100px) translateX(-5%) rotate(5deg)',
+    background: 'white'
   },
   projectSection: {
-    height: '100vh',
+    height: '200vh',
     background: 'white',
     zIndex: 2
   }

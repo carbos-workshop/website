@@ -1,27 +1,19 @@
-export const styles = theme => ({
-  root: {
-    transition: 'opacity .33s cubic-bezier(.5,.93,.67,.97)',
-  },
-  headerRoot: {
-    background: 'white',
-    color: 'black'
-  },
-  showHeader: {
-    opacity: 1
-  },
-  hideHeader:{
-    opacity: 0,
-    transition: 'none',
-    transform: 'translateY(100px)', //hack to get hidden header off screen without dismounting component
-  },
+import { makeStyles } from '@material-ui/core/styles';
+
+export const styles = makeStyles(theme => ({
   flexEnd: {
     display:'flex',
     justifyContent: 'flex-end',
   },
-  homelink:{
-    height: '36px',
+  root:{
+    flexGrow: 1,
+    padding: theme.spacing(2),
+    margin: '0 10%',
+    [theme.breakpoints.down('sm')]: {
+      margin: '0 5%'
+    },
   },
-  desktopMenu:{
+  desktopMenu: {
     flexGrow: 2,
     padding: theme.spacing(2),
     display: 'flex',
@@ -39,6 +31,9 @@ export const styles = theme => ({
       display: 'none'
     },
   },
+  sidenav: {
+    // background: 'black',
+  },
   button: {
     '&:hover': {
       background: 'transparent'
@@ -46,15 +41,15 @@ export const styles = theme => ({
     textTransform: 'lowercase',
     fontWeight: '300',
     fontSize: '24px',
-    color: 'black',
+    color: 'white',
     transition: 'color .33s cubic-bezier(.5,.93,.67,.97)',
   },
   active: {
     color: theme.palette.primary.main,
   },
-  disabled: {
-    color: '#666 !important',
+  disabled:{
+    // color: '#aaa !important',
     pointerEvents: 'all !important',
     cursor: 'not-allowed !important'
   }
-})
+}));

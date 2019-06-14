@@ -1,5 +1,5 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
-import { red, yellow } from '@material-ui/core/colors/';
+import { red, yellow, grey } from '@material-ui/core/colors/';
 
 const theme = responsiveFontSizes(createMuiTheme({
   spacing: 4,
@@ -22,7 +22,7 @@ const theme = responsiveFontSizes(createMuiTheme({
       dark: yellow[600],
     },
     background: {
-      default: '#000'
+      default: grey[900]
     }
   },
   overrides: {
