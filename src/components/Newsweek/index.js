@@ -11,13 +11,13 @@ export const Newsweek = props => {
     <div className={classes.root}>
       <div className={classes.container}>
 
-      <Typography className={classNames([classes.title, classes.blackText])} variant="h3"> 
+      <Typography className={classNames([classes.title, classes.blackText])} variant="h4"> 
         What is Carbos?
       </Typography>
       <div className={classes.subtitleWrapper}>
         <Typography className={classNames([classes.subtitle, classes.blackText])} variant="h5"> 
           <img alt="quote-l" src={QuoteLeft} className={classNames([classes.quoteImage, classes.quoteLeft])}/> 
-          <span className={classes.subtitleText}>A platform that empowers normal people that take conservation action by allowing them to create and sell carbon offsets.</span>
+          <span className={classes.subtitleText}>... a platform that empowers normal people that take conservation action by allowing them to create and sell carbon offsets.</span>
           <img alt="quote-r" src={QuoteRight} className={classNames([classes.quoteImage, classes.quoteRight])}/>
         </Typography>
       </div>

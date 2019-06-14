@@ -52,9 +52,12 @@ export const styles = makeStyles(theme => ({
     transform: 'translateY(100px) translateX(-5%) rotate(5deg)',
     background: 'white'
   },
-  projectSection: {
-    height: '200vh',
-    background: 'white',
-    zIndex: 2
+  scrollSection: {
+    background: 'transparent',
+    visibility: 'hidden',
+    transform: 'translateY(-55px)',
+  },
+  whiteScrollSection: {
+    background: 'white'
   }
 }));

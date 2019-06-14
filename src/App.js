@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import darkTheme from './themes/dark.theme.js';
-
+import classNames from 'classnames'
 import CarbosLogo from './images/carbos_logo.svg'
 
 //component imports
@@ -13,6 +13,12 @@ import { HeroHeader } from './components/HeroHeader'
 import Header from './components/Header'
 import { HeaderContext } from './shared/contexts/context'
 import { Newsweek } from './components/Newsweek'
+import { About } from './components/About'
+import { Faq } from './components/Faq'
+import { Roadmap } from './components/Roadmap'
+import { Team } from './components/Team'
+import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
 
 
 import { styles } from  './App.styles.js'
@@ -100,25 +106,27 @@ function App() {
             {/* newsweek section */}
             <Newsweek />
 
-            <div name="about" className={classes.aboutSection}>
-
-            </div>
+            <div name="about" className={classNames([classes.scrollSection, classes.whiteScrollSection])}></div>
+            <About />
 
             <div name="faq" className={classes.faqSection}>
-
+              <Faq />
             </div>
 
             <div name="roadmap" className={classes.roadmapSection}>
-
+              <Roadmap />
             </div>
 
             <div name="team" className={classes.teamSection}>
-
+              <Team />
             </div>
 
             <div name="contact" className={classes.contactSection}>
-
+              <Contact />
             </div>
+
+            <div id="placeholder" style={{minHeight: '200vh'}}></div>
+            <Footer />
 
           </div>
         </div>
