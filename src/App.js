@@ -12,6 +12,8 @@ import CarbosLogo from './images/carbos_logo.svg'
 import { HeroHeader } from './components/HeroHeader'
 import Header from './components/Header'
 import { HeaderContext } from './shared/contexts/context'
+import { Newsweek } from './components/Newsweek'
+
 
 import { styles } from  './App.styles.js'
 
@@ -56,6 +58,7 @@ function App() {
        <ParallaxProvider>
         <div className={classes.root}>
           <div>
+            {/* hero header */}
             <HeaderContext.Provider value={{ state, dispatch }}>
               <HeroHeader 
                 activeLink={state.activeLink}
@@ -64,9 +67,16 @@ function App() {
               />
             </HeaderContext.Provider>
 
+            {/* hero content */}
             <div className={classes.heroTextWrapper}>
-              <Typography className={classes.heroText} variant="h1">
-                You are part of the solution to climate change
+              <Typography className={classes.heroText} variant="h2">
+                We're a passionate group building 
+              </Typography>
+              <Typography color="primary" variant="h2"> 
+                climate change solutions that work 
+              </Typography> 
+              <Typography className={classes.heroText} variant="h2">
+                for everyday people.
               </Typography>
             </div>
             <div className={classes.heroParalaxWrapper}>
@@ -77,6 +87,7 @@ function App() {
               <div className={classes.stripeDivider}></div>
             </div>
 
+            {/* static header */}
             <HeaderContext.Provider value={{ state, dispatch }}>
               <Header
                 activeLink={state.activeLink}
@@ -85,8 +96,11 @@ function App() {
               />
             </HeaderContext.Provider>
             
+            {/* newsweek section */}
+            <Newsweek />
+
             <div name="project" className={classes.projectSection}>
-              <span style={{color: 'black'}}>we want to make sure you get compensated for your contribution</span>
+
             </div>
           </div>
         </div>

@@ -6,9 +6,12 @@ export const styles = makeStyles(theme => ({
 
   },
   heroTextWrapper: {
-    marginTop: '35vh',
+    marginTop: '20vh',
     marginBottom: '175px',
-    padding: `0 20% 0 10%`
+    padding: `0 20% 0 10%`,
+  },
+  heroText:{
+    lineHeight: '1.3',
   },
   heroImageWrapper: {
     opacity: '0.5',

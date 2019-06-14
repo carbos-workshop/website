@@ -13,16 +13,16 @@ import classNames from 'classnames'
 
 export const HeroHeader = props => {
     const classes = styles();
-		const { dispatch } = useContext(HeaderContext);
-		const [state, setState] = React.useState({
-			menuOpen: false,
-		});
-		const toggleDrawer = (open) => event => {
-			if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-				return;
-			}
-			setState({ ...state, menuOpen: open });
-		}
+    const { dispatch } = useContext(HeaderContext);
+    const [state, setState] = React.useState({
+        menuOpen: false,
+    });
+    const toggleDrawer = (open) => event => {
+        if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+        }
+        setState({ ...state, menuOpen: open });
+    }
 
     const links = props.links.map( link => (
         link.disabled 

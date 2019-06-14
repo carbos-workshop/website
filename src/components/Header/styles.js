@@ -12,14 +12,14 @@ export const styles = theme => ({
   hideHeader:{
     opacity: 0,
     transition: 'none',
-    transform: 'translateY(100px)', //hack to get hidden header off screen without dismounting component
+    transform: 'translateY(-100px)', //hack to get hidden header off screen without dismounting component
   },
   flexEnd: {
     display:'flex',
     justifyContent: 'flex-end',
   },
   homelink:{
-    height: '36px',
+    height: '24px',
   },
   desktopMenu:{
     flexGrow: 2,
@@ -45,7 +45,7 @@ export const styles = theme => ({
     },
     textTransform: 'lowercase',
     fontWeight: '300',
-    fontSize: '24px',
+    fontSize: '16px',
     color: 'black',
     transition: 'color .33s cubic-bezier(.5,.93,.67,.97)',
   },
@@ -53,7 +53,7 @@ export const styles = theme => ({
     color: theme.palette.primary.main,
   },
   disabled: {
-    color: '#666 !important',
+    color: 'rgba(0,0,0,.2) !important',
     pointerEvents: 'all !important',
     cursor: 'not-allowed !important'
   }

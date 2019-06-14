@@ -140,7 +140,7 @@ class Header extends React.Component {
         <AppBar position="fixed" classes={{
           positionFixed: classes.headerRoot
         }}> 
-          <Toolbar>
+          <Toolbar variant="dense">
           <Button
             className={classes.button}
             disableRipple={true}
