@@ -1,9 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const styles = makeStyles(theme => ({
-  flexEnd: {
+  center: {
     display:'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
   },
   root:{
     flexGrow: 1,

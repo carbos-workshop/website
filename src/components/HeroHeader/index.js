@@ -86,7 +86,7 @@ export const HeroHeader = props => {
                         alignItems="center">
                         {
                             links.map( (link, i) => (
-                                <Grid item xs key={i} className={classes.flexEnd}>
+                                <Grid item xs key={i} className={classes.center}>
                                     { link }
                                 </Grid>
                             ))

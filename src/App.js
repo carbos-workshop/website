@@ -22,17 +22,18 @@ function App() {
 
   const ParallaxHeroImage = () => (
     <Parallax y={[100, -20]} tagOuter="figure">
-        <img src={CarbosLogo} className={classes.heroParalaxLogo}/>
+        <img alt="carbos-logo" src={CarbosLogo} className={classes.heroParalaxLogo}/>
     </Parallax>
   );
 
   const initialState = {
     links: [
-      { name: 'project', disabled: false },
-      { name: 'news', disabled: false },
+      { name: 'about', disabled: false },
+      { name: 'faq', disabled: false },
+      { name: 'roadmap', disabled: false },
+      { name: 'team', disabled: false },
+      { name: 'contact', disabled: false },
       { name: 'app', disabled: true },
-      { name: 'contact', disabled: false }
-
     ],
     activeLink: null
   }
@@ -99,9 +100,26 @@ function App() {
             {/* newsweek section */}
             <Newsweek />
 
-            <div name="project" className={classes.projectSection}>
+            <div name="about" className={classes.aboutSection}>
 
             </div>
+
+            <div name="faq" className={classes.faqSection}>
+
+            </div>
+
+            <div name="roadmap" className={classes.roadmapSection}>
+
+            </div>
+
+            <div name="team" className={classes.teamSection}>
+
+            </div>
+
+            <div name="contact" className={classes.contactSection}>
+
+            </div>
+
           </div>
         </div>
         </ParallaxProvider>
@@ -109,5 +127,4 @@ function App() {
     </React.Fragment>
   );
 }
-//<div className={classes.heroTransition}></div>
 export default App;

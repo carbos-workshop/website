@@ -16,14 +16,14 @@ export const Newsweek = props => {
       </Typography>
       <div className={classes.subtitleWrapper}>
         <Typography className={classNames([classes.subtitle, classes.blackText])} variant="h5"> 
-          <img src={QuoteLeft} className={classNames([classes.quoteImage, classes.quoteLeft])}/> 
+          <img alt="quote-l" src={QuoteLeft} className={classNames([classes.quoteImage, classes.quoteLeft])}/> 
           <span className={classes.subtitleText}>A platform that empowers normal people that take conservation action by allowing them to create and sell carbon offsets.</span>
-          <img src={QuoteRight} className={classNames([classes.quoteImage, classes.quoteRight])}/>
+          <img alt="quote-r" src={QuoteRight} className={classNames([classes.quoteImage, classes.quoteRight])}/>
         </Typography>
       </div>
 
       <div className={classes.videoWrapper}>
-        <iframe className={classes.videoFrame} width="560" height="315" src="https://www.youtube.com/embed/21_sk4yRjxs?start=30" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe title="newsweek-embed" className={classes.videoFrame} width="560" height="315" src="https://www.youtube.com/embed/21_sk4yRjxs?start=30" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
 
       </div>
