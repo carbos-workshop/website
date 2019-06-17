@@ -60,6 +60,9 @@ export const styles = makeStyles(theme => ({
     visibility: 'hidden',
     transform: 'translateY(-55px)',
   },
+  faqSection:{
+    transform: 'translateY(55px)',
+  },
   whiteScrollSection: {
     background: 'white'
   },

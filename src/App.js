@@ -117,7 +117,7 @@ function App() {
             <div name="faq" className={classes.faqSection}></div>
             <Faq />
 
-            <div name="roadmap" className={classes.roadmapSection}></div>
+            <div name="roadmap" className={classNames([classes.roadmapSection, classes.scrollSection])}></div>
             <Roadmap />
 
             <div name="team" className={classes.teamSection}>
