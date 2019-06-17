@@ -3,32 +3,33 @@ import Typography from '@material-ui/core/Typography';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepButton from '@material-ui/core/StepButton';
-import Button from '@material-ui/core/Button';
 import { styles } from './styles'
 
 function getSteps() {
   return [
-    'Select campaign settings', 
-    'Create an ad group', 
-    'Create an ad',
-    'sadf'
+    'Q3 2019', 
+    'Q4 2019', 
+    'Q1 2020',
+    // 'Q2 2020'
   ];
 }
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return 'Step 1: Select campaign settings...';
+      return ['Pilot Launch', 'Exponential Impact Accelerator' ];
     case 1:
-      return 'Step 2: What is an ad group anyways?';
+      return ['Beta Launch', 'IPFS Deployment', 'Tree/Shrub Calculator and API' ];
     case 2:
-      return 'Step 3: This is the bit I really care about!';
-    case 3:
-      return 'Step 4: This is the bit I really care about!';
+      return ['Application Launch', 'ETH 2.0 Updates', 'Footprint Calculator and API' ];
+    // case 3:
+    //   return ['Q2 2020 text'];
     default:
-      return 'Unknown step';
+      console.error('Unknown step')
+      return [];
   }
 }
+
 
 export const Roadmap = props => {
   const classes = styles();
@@ -45,6 +46,9 @@ export const Roadmap = props => {
       <div className={classes.container}>
         <Typography className={classes.title} variant="h4">
           Our Roadmap
+        </Typography>
+        <Typography className={classes.subtitle} variant="subtitle1">
+          A quick look at our upcoming goals and development
         </Typography>
 
         <Stepper 
@@ -66,7 +70,17 @@ export const Roadmap = props => {
 
         {/* stepper content */}
         <div>
-          <Typography>{getStepContent(activeStep)}</Typography>
+          <ul>
+            {
+              getStepContent(activeStep).map((text, i) => (
+                <li key={i}>
+                  <Typography variant="subtitle2">
+                    { text }
+                  </Typography>
+                </li>
+              ))
+            }
+          </ul>
         </div>
 
       </div>

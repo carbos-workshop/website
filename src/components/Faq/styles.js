@@ -5,6 +5,7 @@ export const styles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     marginTop: theme.spacing(30),
+    marginBottom: theme.spacing(5),
   },
   container: {
     margin: '0 15%',
@@ -25,4 +26,14 @@ export const styles = makeStyles(theme => ({
     fontSize: theme.typography.pxToRem(15),
     fontWeight: 500,
   },
+  link: {
+    textDecoration: 'none',
+    color: theme.palette.primary.main,
+    '&:hover':{
+      color: theme.palette.primary.light,
+    },
+    '&:active':{
+      color: theme.palette.primary.main,
+    }
+  }
 }))

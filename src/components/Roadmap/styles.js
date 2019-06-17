@@ -8,7 +8,7 @@ export const styles = makeStyles(theme => ({
   },
   container: {
     margin: '0 15%',
-    paddingTop: theme.spacing(20),
+    paddingTop: theme.spacing(10),
     width: '70%',
     display: 'flex',
     flexDirection: 'column',
@@ -18,6 +18,10 @@ export const styles = makeStyles(theme => ({
     },
   },
   title: {
+    marginBottom: theme.spacing(2)
+  },
+  subtitle: {
+    marginLeft: theme.spacing(5),
     marginBottom: theme.spacing(8)
   },
   stepper: {
