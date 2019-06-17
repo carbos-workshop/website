@@ -32,12 +32,6 @@ function App() {
     </Parallax>
   );
 
-  const ParallaxAboutImage = () => (
-    <Parallax y={[-20, 20]} tagOuter="figure">
-        <img alt="carbos-logo" src={CarbosLogo} className={classes.aboutParalaxLogo}/>
-    </Parallax>
-  );
-
   const initialState = {
     links: [
       { name: 'about', disabled: false },
@@ -123,9 +117,8 @@ function App() {
             <div name="faq" className={classes.faqSection}></div>
             <Faq />
 
-            <div name="roadmap" className={classes.roadmapSection}>
-              <Roadmap />
-            </div>
+            <div name="roadmap" className={classes.roadmapSection}></div>
+            <Roadmap />
 
             <div name="team" className={classes.teamSection}>
               <Team />

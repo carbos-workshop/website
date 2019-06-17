@@ -13,8 +13,9 @@ export const Faq = props => {
     {
       ask: 'Questions?',
       answer: 'asdffdsa. asdf.'
-    }
+    },
   ]
+  
   return(
     <div className={classes.root}>
       <div className={classes.container}>
@@ -23,14 +24,12 @@ export const Faq = props => {
         </Typography>
 
       {
-        questions.map( question => (
-          <ExpansionPanel>
+        questions.map( (question, i) => (
+          <ExpansionPanel key={i}>
             <ExpansionPanelSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-            <Typography variant="subtitle2">{question.ask}</Typography>
+              aria-controls="panel1a-content">
+              <Typography variant="subtitle2">{question.ask}</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography variant="body2">
