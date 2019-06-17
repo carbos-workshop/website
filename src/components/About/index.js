@@ -38,10 +38,10 @@ export const About = props => {
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} className={classes.imageWrapper}>
             <img alt="carbos" src={CarbosChains}/>
           </Grid>
-          <Grid item xs={12} sm={8} className={classes.imageWrapper}>
+          <Grid item xs={12} sm={8}>
           <Typography className={classNames([ classes.textWithImage])} variant="body1">
             Carbos leverages the Ethereum blockchain to add transparency and security to the offset process by directing businesses to purchase carbon directly from landowners rather than via a thrid-party registry.
           </Typography>

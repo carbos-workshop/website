@@ -36,7 +36,12 @@ export const styles = makeStyles(theme => ({
   imageWrapper: {
     display: 'flex',
     justifyContent: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '50vw',
+      margin: '0 auto',
+      padding: '20px 0',
+    },
   },
   // imageLeft: {},
   // imageRight: {},

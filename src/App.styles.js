@@ -52,6 +52,9 @@ export const styles = makeStyles(theme => ({
     transform: 'translateY(100px) translateX(-5%) rotate(5deg)',
     background: 'white'
   },
+  sectionDividerEnd: {
+    transform: 'rotate(180deg) translateY(-200px)',
+  },
   scrollSection: {
     background: 'transparent',
     visibility: 'hidden',
@@ -59,5 +62,5 @@ export const styles = makeStyles(theme => ({
   },
   whiteScrollSection: {
     background: 'white'
-  }
+  },
 }));
