@@ -26,7 +26,10 @@ const styles = makeStyles(theme => ({
     width: '150px',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    // backgroundPosition: 'left',
+    [theme.breakpoints.down('sm')]: {
+      height: '100px',
+      width: '100px',
+     },
   },
   name: {
     margin: '0 5%',

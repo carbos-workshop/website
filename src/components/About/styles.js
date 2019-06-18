@@ -43,6 +43,16 @@ export const styles = makeStyles(theme => ({
       padding: '20px 0',
     },
   },
+  imageSwapOrder: {
+    [theme.breakpoints.down('sm')]: {
+      order: '2'
+     },
+  },
+  mobileFirst: {
+    [theme.breakpoints.down('sm')]: {
+     order: '1'
+    },
+  },
   // imageLeft: {},
   // imageRight: {},
 }))

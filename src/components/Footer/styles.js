@@ -14,6 +14,10 @@ export const styles = makeStyles(theme => ({
     gridColumnStart: '2',
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    [theme.breakpoints.up('md')]: {
+      margin: '1em'
+    },
   },
   contact: {
     gridColumnStart: '3',

@@ -15,9 +15,9 @@ import { HeaderContext } from './shared/contexts/context'
 import { Newsweek } from './components/Newsweek'
 import { About } from './components/About'
 import { Faq } from './components/Faq'
-import { Roadmap } from './components/Roadmap'
+// import { Roadmap } from './components/Roadmap'
 import { Team } from './components/Team'
-import { Contact } from './components/Contact'
+// import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
 
