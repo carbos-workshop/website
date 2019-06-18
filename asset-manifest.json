@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d498bfb3.chunk.css",
+    "main.js": "/static/js/main.e2225906.chunk.js",
+    "main.js.map": "/static/js/main.e2225906.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.dd55bd31.chunk.js": "/static/js/2.dd55bd31.chunk.js",
+    "static/js/2.dd55bd31.chunk.js.map": "/static/js/2.dd55bd31.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1c651511a8d4d5b5d252ee3a3ec988f7.js": "/precache-manifest.1c651511a8d4d5b5d252ee3a3ec988f7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d498bfb3.chunk.css.map": "/static/css/main.d498bfb3.chunk.css.map",
+    "static/media/alek.tutchton.jpg": "/static/media/alek.tutchton.e30f7c03.jpg",
+    "static/media/carbos_chains_image.svg": "/static/media/carbos_chains_image.c90066da.svg",
+    "static/media/carbos_cycle_image.svg": "/static/media/carbos_cycle_image.4a21ca23.svg",
+    "static/media/carbos_logo.svg": "/static/media/carbos_logo.6a5d49c6.svg",
+    "static/media/carbos_property_image.svg": "/static/media/carbos_property_image.5ae502e6.svg",
+    "static/media/carbos_text_black.svg": "/static/media/carbos_text_black.53e812ed.svg",
+    "static/media/carbos_text_white.svg": "/static/media/carbos_text_white.60cdf927.svg",
+    "static/media/ethdenver.png": "/static/media/ethdenver.d8c6f1b5.png",
+    "static/media/goCode.png": "/static/media/goCode.b0eb1ff2.png",
+    "static/media/logo.svg": "/static/media/logo.b305c584.svg",
+    "static/media/nathan.tutchton.jpg": "/static/media/nathan.tutchton.ffb0bc53.jpg",
+    "static/media/quote_left.svg": "/static/media/quote_left.31413579.svg",
+    "static/media/quote_right.svg": "/static/media/quote_right.5f4d9d4d.svg",
+    "static/media/xi.png": "/static/media/xi.e20ea973.png"
+  }
+}
