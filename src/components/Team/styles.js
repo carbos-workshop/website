@@ -20,12 +20,13 @@ export const styles = makeStyles(theme => ({
     marginBottom: theme.spacing(12)
   },
   otherTitle: {
-    marginTop: theme.spacing(12),
+    marginTop: theme.spacing(20),
   },
   partnerLogo:{
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
-    height: '81px'
+    height: '81px',
+    width: '81px',
   }
 }))

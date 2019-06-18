@@ -36,7 +36,7 @@ function App() {
     links: [
       { name: 'about', disabled: false },
       { name: 'faq', disabled: false },
-      { name: 'roadmap', disabled: false },
+      // { name: 'roadmap', disabled: false },
       { name: 'team', disabled: false },
       // { name: 'contact', disabled: false },
       { name: 'app', disabled: true },
@@ -117,8 +117,8 @@ function App() {
             <div name="faq" className={classes.faqSection}></div>
             <Faq />
 
-            <div name="roadmap" className={classNames([classes.roadmapSection, classes.scrollSection])}></div>
-            <Roadmap />
+            {/* <div name="roadmap" className={classNames([classes.roadmapSection, classes.scrollSection])}></div>
+            <Roadmap /> */}
 
             <div name="team" className={classNames([classes.teamSection, classes.scrollSection])}></div>
             <Team />
