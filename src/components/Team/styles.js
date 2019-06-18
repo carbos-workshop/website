@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const styles = makeStyles(theme => ({
   root: {
-    
+    marginBottom: theme.spacing(20),
   },
   container: {
     margin: '0 15%',
@@ -22,4 +22,10 @@ export const styles = makeStyles(theme => ({
   otherTitle: {
     marginTop: theme.spacing(12),
   },
+  partnerLogo:{
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center',
+    height: '81px'
+  }
 }))
