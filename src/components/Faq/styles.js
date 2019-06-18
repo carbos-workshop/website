@@ -20,7 +20,7 @@ export const styles = makeStyles(theme => ({
   },
   title: {
     textAlign: 'center',
-    marginBottom: theme.spacing(8),
+    marginBottom: theme.spacing(12),
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),

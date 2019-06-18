@@ -24,11 +24,11 @@ export const Faq = props => {
     },
     {
       ask: 'What are ecosystem services?',
-      answer: "'Ecosystem Services' is an umbrella term used to describe the array of benefits provided to humans by the natueral environment.  Water filtration, flood prevention, pest control, and air purification are all examples of ecosystem services derived from local land conservation.  Only by creating localized carbon offsets can businesses and individuals ensure the preservation of ecosystem services– relying on distant or offshore land for conservation deprives the local community of irreplacable ecosystem services. "
+      answer: "'Ecosystem Services' is an umbrella term used to describe the array of benefits provided to humans by the natural environment.  Water filtration, flood prevention, pest control, and air purification are all examples of ecosystem services derived from local land conservation.  Only by creating localized carbon offsets can businesses and individuals ensure the preservation of ecosystem services– relying on distant or offshore land for conservation deprives the local community of irreplacable ecosystem services. "
     },
     {
       ask: 'What is carbon worth?',
-      answer: 'More than 40 governments worldwide have decided to price or tax carbon according to the negative impacts of carbon emission.  Pricing specifics can fluctuate, but on average carbon costs $15-$30 per tonne.'
+      answer: 'More than 40 governments worldwide have decided to price or tax carbon according to the negative impacts of greenhouse gasses.  Pricing specifics can fluctuate, but on average carbon costs $15-$30 per tonne.'
     },
     {
       ask: "How can Carbos help me or my business become carbon neutral?",

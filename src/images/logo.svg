@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="56px" viewBox="0 0 89 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="25.1495096%" y1="6.69487307%" x2="74.86286%" y2="93.3175709%" id="linearGradient-1">
+            <stop stop-color="#FF5544" offset="0%"></stop>
+            <stop stop-color="#FF4340" offset="10%"></stop>
+            <stop stop-color="#FF1E38" offset="32%"></stop>
+            <stop stop-color="#FF0833" offset="51%"></stop>
+            <stop stop-color="#FF0031" offset="62%"></stop>
+        </linearGradient>
+        <linearGradient x1="74.8504904%" y1="6.69487307%" x2="25.13714%" y2="93.3175709%" id="linearGradient-2">
+            <stop stop-color="#FF5544" offset="0%"></stop>
+            <stop stop-color="#FF4340" offset="10%"></stop>
+            <stop stop-color="#FF1E38" offset="33%"></stop>
+            <stop stop-color="#FF0833" offset="51%"></stop>
+            <stop stop-color="#FF0031" offset="62%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100.00995%" id="linearGradient-3">
+            <stop stop-color="#4D4D4D" offset="0%"></stop>
+            <stop stop-color="#3C3C3C" offset="13%"></stop>
+            <stop stop-color="#2D2D2D" offset="30%"></stop>
+            <stop stop-color="#252525" offset="51%"></stop>
+            <stop stop-color="#222222" offset="83%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-159.000000, -677.000000)" fill-rule="nonzero">
+            <g id="logo" transform="translate(159.000000, 677.000000)">
+                <ellipse id="Oval" fill="url(#linearGradient-1)" cx="22.2113043" cy="27.8613861" rx="22.2113043" ry="22.2780198"></ellipse>
+                <ellipse id="Oval" fill="url(#linearGradient-2)" cx="66.639441" cy="27.8613861" rx="22.2113043" ry="22.2780198"></ellipse>
+                <ellipse id="Oval" fill="url(#linearGradient-3)" cx="44.4226087" cy="27.8613861" rx="27.7779503" ry="27.8613861"></ellipse>
+                <path d="M56.7886335,18.5631683 L54.621677,20.2265347 C52.2581517,17.1246718 48.5629542,15.3374132 44.6713665,15.4138614 C41.4720864,15.3708435 38.3922402,16.6312912 36.1362112,18.9069307 C33.7971662,21.1293397 32.4989488,24.2367097 32.5596273,27.4677228 C32.4829184,30.657043 33.7539098,33.7302793 36.0588199,35.9287129 C38.4079788,38.1995457 41.5705445,39.4247983 44.831677,39.3275248 C48.6227682,39.3885212 52.2318584,37.700174 54.621677,34.7477228 L56.7886335,36.4110891 C55.4367821,38.2074657 53.6527524,39.6305827 51.6034161,40.5473267 C49.4216037,41.508923 47.0598672,41.9910074 44.6768944,41.9611881 C40.2545342,41.9611881 36.64294,40.5639604 33.8421118,37.769505 C31.0412836,34.9750495 29.6353416,31.4413201 29.6242857,27.1683168 C29.6070367,24.5988866 30.2811753,22.0723721 31.5756522,19.8550495 C32.8629623,17.6334781 34.737904,15.8123922 36.9930435,14.5932673 C39.2763548,13.3380512 41.8409877,12.6873341 44.4447205,12.7025743 C46.9138865,12.6627495 49.3604056,13.1800513 51.6034161,14.2162376 C53.6759936,15.193492 55.4620036,16.6907604 56.7886335,18.5631683 L56.7886335,18.5631683 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

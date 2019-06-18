@@ -45,7 +45,7 @@ export const Roadmap = props => {
     <div className={classes.root}>
       <div className={classes.container}>
         <Typography className={classes.title} variant="h4">
-          Our Roadmap
+          The Roadmap
         </Typography>
         <Typography className={classes.subtitle} variant="subtitle1">
           A quick look at our upcoming goals and development

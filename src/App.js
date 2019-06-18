@@ -38,7 +38,7 @@ function App() {
       { name: 'faq', disabled: false },
       { name: 'roadmap', disabled: false },
       { name: 'team', disabled: false },
-      { name: 'contact', disabled: false },
+      // { name: 'contact', disabled: false },
       { name: 'app', disabled: true },
     ],
     activeLink: null
@@ -120,15 +120,9 @@ function App() {
             <div name="roadmap" className={classNames([classes.roadmapSection, classes.scrollSection])}></div>
             <Roadmap />
 
-            <div name="team" className={classes.teamSection}>
-              <Team />
-            </div>
+            <div name="team" className={classNames([classes.teamSection, classes.scrollSection])}></div>
+            <Team />
 
-            <div name="contact" className={classes.contactSection}>
-              <Contact />
-            </div>
-
-            <div id="placeholder" style={{minHeight: '200vh'}}></div>
             <Footer />
 
           </div>

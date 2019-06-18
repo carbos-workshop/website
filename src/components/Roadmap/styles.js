@@ -8,7 +8,7 @@ export const styles = makeStyles(theme => ({
   },
   container: {
     margin: '0 15%',
-    paddingTop: theme.spacing(10),
+    paddingTop: theme.spacing(15),
     width: '70%',
     display: 'flex',
     flexDirection: 'column',
