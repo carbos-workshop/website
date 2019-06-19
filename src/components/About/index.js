@@ -18,7 +18,7 @@ export const About = props => {
         </Typography>
 
         <Typography className={classes.textOnlyRow} variant="body1">
-          We believe that all carbon negative actions– regardless of scale– are part of a global solution to climate change, which is why we're working to connect environmentally progressive businesses with local carbon neturality solutions.  
+          We believe that all carbon negative actions– regardless of scale– are part of a global solution to climate change, which is why we're working to connect environmentally progressive businesses with local carbon neturality solutions.
         </Typography>
 
 
@@ -43,7 +43,7 @@ export const About = props => {
           </Grid>
           <Grid item xs={12} sm={8}>
           <Typography className={classNames([ classes.textWithImage])} variant="body1">
-            Carbos leverages the Ethereum blockchain to add transparency and security to the offset process by directing businesses to purchase carbon directly from landowners rather than via a thrid-party registry.
+            Carbos leverages the Ethereum blockchain to add transparency and security to the offset process by directing businesses to purchase carbon directly from landowners rather than via a third-party registry.
           </Typography>
           </Grid>
         </Grid>
@@ -51,7 +51,7 @@ export const About = props => {
         <Grid container>
            <Grid item xs={12} sm={7}>
             <Typography className={classNames([classes.textWithImage])} variant="body1">
-              We maximize the benefits of carbon neutrality for both businesses and landowners through community reinvestment and local ecosystem service preservation.           
+              We maximize the benefits of carbon neutrality for both businesses and landowners through community reinvestment and local ecosystem service preservation.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={5} className={classes.imageWrapper}>
@@ -60,7 +60,7 @@ export const About = props => {
         </Grid>
 
         {/* <Typography className={classes.paragraph}  variant="body1">
-              We maximize the benefits of carbon neutrality for both businesses and landowners through community reinvestment and local ecosystem service preservation. 
+              We maximize the benefits of carbon neutrality for both businesses and landowners through community reinvestment and local ecosystem service preservation.
         </Typography> */}
 
       </div>
