@@ -15,6 +15,7 @@ import { HeaderContext } from './shared/contexts/context'
 import { Newsweek } from './components/Newsweek'
 import { About } from './components/About'
 import { Faq } from './components/Faq'
+import  Register  from './components/Register'
 // import { Roadmap } from './components/Roadmap'
 import { Team } from './components/Team'
 // import { Contact } from './components/Contact'
@@ -119,6 +120,8 @@ function App() {
 
             {/* <div name="roadmap" className={classNames([classes.roadmapSection, classes.scrollSection])}></div>
             <Roadmap /> */}
+            <div name="register"></div>
+            <Register />
 
             <div name="team" className={classNames([classes.teamSection, classes.scrollSection])}></div>
             <Team />
