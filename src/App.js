@@ -1,5 +1,6 @@
 import React , { useReducer } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+import { SnackbarProvider } from 'notistack';
 
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -62,6 +63,7 @@ function App() {
   return (
     <React.Fragment>
       <MuiThemeProvider theme={darkTheme}>
+      <SnackbarProvider maxSnack={3}>
         <CssBaseline />
        <ParallaxProvider>
         <div className={classes.root}>
@@ -120,17 +122,19 @@ function App() {
 
             {/* <div name="roadmap" className={classNames([classes.roadmapSection, classes.scrollSection])}></div>
             <Roadmap /> */}
-            <div name="register"></div>
-            <Register />
 
             <div name="team" className={classNames([classes.teamSection, classes.scrollSection])}></div>
             <Team />
+
+            <div name="register" className={classNames([classes.registerSection, classes.scrollSection])}></div>
+            <Register />
 
             <Footer />
 
           </div>
         </div>
         </ParallaxProvider>
+        </SnackbarProvider>
       </MuiThemeProvider>
     </React.Fragment>
   );

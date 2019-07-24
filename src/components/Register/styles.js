@@ -6,7 +6,7 @@ export const styles = makeStyles(theme => ({
   },
   container: {
     margin: '0 15%',
-    paddingTop: theme.spacing(10),
+    paddingTop: theme.spacing(5),
     width: '70%',
     display: 'flex',
     flexDirection: 'column',
@@ -23,5 +23,19 @@ export const styles = makeStyles(theme => ({
       textAlign: 'center',
       fontSize: theme.typography.pxToRem(15),
       fontWeight: 500
+  },
+  button: {
+    marginTop: theme.spacing(8),
+    width: '100%'
+  },
+  textField: {
+    width: '100%',
+  },
+  formControl: {
+    width: '100%',
+  },
+  registerRow: {
+    marginTop: theme.spacing(4)
   }
+  
 }))

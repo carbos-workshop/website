@@ -1,66 +1,92 @@
-import React from 'react';
+import React, { useReducer } from 'react';
+import { withSnackbar } from 'notistack';
+
 import { styles } from './styles'
 import Typography from '@material-ui/core/Typography';
-import classNames from 'classnames';
-
-import { makeStyles } from '@material-ui/core/styles';
+// import classNames from 'classnames';
+import Grid from '@material-ui/core/Grid'
+import OutlinedInput from '@material-ui/core/OutlinedInput';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 const axios = require('axios');
-const hubspotURL = 'https://api.hubapi.com/contacts/v1/contact/?hapikey=cd6049fe-4a4f-4387-8351-c4ee796f38b1';
 
-export default function Register() {
+function Register(props) {
     const classes = styles();
-    const [state, setValues] = React.useState({
-      firstName: '',
-      lastName: '',
-      email: ''
-    });
 
-const handleChange = name => event => {
-    setValues({ ...state, [name]: event.target.value });
-  };
+      const inputLabel = React.useRef(null);
+      const [labelWidth, setLabelWidth] = React.useState(0);
+      React.useEffect(() => {
+        setLabelWidth(inputLabel.current.offsetWidth);
+      }, []);
+    
 
-const registerButton = (firstName, lastName, email) => {
-    //Send POST to hubspot to add to CRM
+		const initialState = {	
+			firstname: '',
+			lastname: '',
+			email: '',
+			interest: 'all',
+		}
+	
+		const reducer = (state, action) => {
+			switch (action.type) {
+				case 'UPDATE_FIRSTNAME':
+					return { 
+						...state, 
+						firstname: action.value 
+					};
+				case 'UPDATE_LASTNAME':
+					return { 
+						...state, 
+						lastname: action.value 
+					};
+				case 'UPDATE_EMAIL':
+					return { 
+						...state, 
+						email: action.value 
+					};
+				case 'UPDATE_INTEREST':
+					return { 
+						...state, 
+						interest: action.value 
+					};
+				default:
+					throw new Error('Unexpected action');
+			}
+		}
+	
+		const [ state, dispatch ] = useReducer(reducer, initialState);
+		
+		
+	function register(){
+		axios.post(
+			'https://x0edl0f7dc.execute-api.us-east-1.amazonaws.com/carbos/crm',
+			{
+				firstname: state.firstname,
+				lastname: state.lastname,
+				email: state.email,
+				interest: state.interest
+			},
+			{
+				headers: { 'Content-Type': 'application/json' }
+			}
+		)
+		.then(res => {
+			console.log(res)
+			if (res.data.statusCode !== 200) {
+				props.enqueueSnackbar(JSON.parse(res.data.body).message)
+			}
+			else {
+				props.enqueueSnackbar('Successfully subscribed.')
+			}
+		})
+		.catch(() => props.enqueueSnackbar('Unexpected Failure'));
+	}
 
-    //TEMP 
-let user = {
-    properties: [
-        {
-            property: 'firstname',
-            value: 'asdf'
-        },
-        {
-            property: 'lastname',
-            value: 'asdf'
-        },
-        {
-            property: 'email',
-            value: 'dog@food.com'
-        }
-    ]
-}
-
-var headers = {
-    'Content-Type': 'application/json'
-}
-
-// axios({
-//     method: 'post',
-//     url: hubspotURL,
-//     headers: {  'Content-Type': 'application/json' },
-//     data: JSON.stringify(user),
-//   });
-
-    axios.post(
-        hubspotURL, JSON.stringify(user), {  headers: headers }
-    )
-    .then(console.log)
-    .catch(console.log)
-
-}
 
   return (
     <div className={classes.root}>
@@ -69,43 +95,86 @@ var headers = {
               Register
         </Typography>
 
-        <p className={classes.message}>Sign up to recive emails about our progress and how to join!</p>
+        <Typography variant="body1" className={classes.message}>
+            Sign up to get important updates from our team!
+        </Typography>
 
-        <form className={classes.container} noValidate autoComplete="off">
-        <TextField
-            id="firstName"
-            label="First Name"
-            className={classes.textField}
-            value={state.firstName}
-            onChange={handleChange('firstName')}
-            margin="normal"
-            variant="outlined"
-        />
-        <TextField
-            id="lastName"
-            label="Last Name"
-            className={classes.textField}
-            value={state.lastName}
-            onChange={handleChange('lastName')}
-            margin="normal"
-            variant="outlined"
-        />
+        <Grid container className={classes.registerRow}>
+
+        <Grid container spacing={2}>
+            <Grid item xs={6}>
+            <TextField
+						required
+								label="First Name"
+								name="firstname"
+                className={classes.textField}
+                value={state.firstname}
+                onChange={(e)=>{dispatch({type: 'UPDATE_FIRSTNAME', value: e.target.value})}}
+                margin="normal"
+                variant="outlined"/>
+            </Grid>
+            <Grid item xs={6}>
+                <TextField
+								required
+										label="Last Name"
+										name="lastname"
+                    className={classes.textField}
+                    value={state.lastname}
+									onChange={(e)=>{dispatch({type: 'UPDATE_LASTNAME', value: e.target.value})}}
+                    margin="normal"
+                    variant="outlined"/>
+            </Grid>
+        </Grid>
+        <Grid item xs={12}>
         <TextField
             required
-            id="email"
-            label="email"
+						label="Email"
+						name="email"
             className={classes.textField}
             value={state.email}
-            onChange={handleChange('email')}
+									onChange={(e)=>{dispatch({type: 'UPDATE_EMAIL', value: e.target.value})}}
             margin="normal"
-            variant="outlined"
-        />
-        <Button variant="contained" color="primary" className={classes.button} onClick={() => {
-            registerButton(state.firstName, state.lastName, state.email)}}>
-            Submit
-        </Button>     
-        </form>
+            variant="outlined"/>
+        </Grid>
+        <Grid item xs={12} className={classes.registerRow}> 
+            <FormControl variant="outlined" className={classes.formControl}>
+							<InputLabel ref={inputLabel} htmlFor="outlined-age-simple">
+							I'm interested in...
+							</InputLabel>
+							<Select
+							value={state.interest}
+									onChange={(e)=>{dispatch({type: 'UPDATE_INTEREST', value: e.target.value})}}
+							input={<OutlinedInput labelWidth={labelWidth} name="interest" />}
+							>
+							<MenuItem value={'all'}>Everything</MenuItem>
+							<MenuItem value={'buyer'}>Buying Offsets</MenuItem>
+							<MenuItem value={'landowner'}>Creating Offsets</MenuItem>
+							</Select>
+            </FormControl>
+        </Grid>
+
+        <Grid item xs={12}>
+					<Button 
+						variant="contained" 
+						color="primary" 
+						disabled={
+							!Boolean(
+								state.email
+								&& state.firstname
+								&& state.lastname
+							)
+						}
+						className={classes.button} 
+						onClick={register}>
+							Submit
+					</Button>     
+        </Grid>
+
+        </Grid>
+       
     </div>
     </div>
     );
 }
+
+export default withSnackbar(Register)
