@@ -25,18 +25,24 @@ export const HeroHeader = props => {
     }
 
     const links = props.links.map( link => (
-        link.disabled 
+        link.register 
         ?
-          <Button 
-            className={classNames([
-                classes.button,
-                classes.disabled
-            ])}
-            disableRipple={true}
+        <Link 
             key={link.name}
-            disabled={true}>
-            { link.name }
-          </Button>
+            activeClass="active" 
+            to={ link.name } 
+            spy={true} 
+            smooth={true} 
+            offset={50} 
+            duration={500} >
+             <Button 
+                color="primary"
+                variant="outlined"
+                onClick={()=>{dispatch({type: 'SET_ACTIVE_LINK', name: link.name })}}
+                key={link.name}>
+                { link.name }
+            </Button>
+            </Link>
         :
         <Link 
             key={link.name}

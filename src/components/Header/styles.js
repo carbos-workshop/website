@@ -47,6 +47,9 @@ export const styles = theme => ({
     fontWeight: '300',
     fontSize: '16px',
     color: 'black',
+    // [theme.breakpoints.down('sm')]: {
+    //   color: 'white'
+    // },
     transition: 'color .33s cubic-bezier(.5,.93,.67,.97)',
   },
   active: {
@@ -56,5 +59,8 @@ export const styles = theme => ({
     color: 'rgba(0,0,0,.2) !important',
     pointerEvents: 'all !important',
     cursor: 'not-allowed !important'
-  }
+  },
+  sidenav: {
+    background: '#fafafa' 
+  },
 })

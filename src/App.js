@@ -1,9 +1,10 @@
 import React , { useReducer } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import { SnackbarProvider } from 'notistack';
-
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Button from '@material-ui/core/Button';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import darkTheme from './themes/dark.theme.js';
 import classNames from 'classnames'
@@ -36,12 +37,13 @@ function App() {
 
   const initialState = {
     links: [
-      { name: 'about', disabled: false },
-      { name: 'faq', disabled: false },
+      { name: 'about', register: false },
+      { name: 'faq', register: false },
       // { name: 'roadmap', disabled: false },
-      { name: 'team', disabled: false },
+      { name: 'team', register: false },
       // { name: 'contact', disabled: false },
-      { name: 'app', disabled: true },
+      // { name: 'app', disabled: true },
+      { name: 'register', register: true }
     ],
     activeLink: null
   }
@@ -88,6 +90,25 @@ function App() {
               <Typography className={classes.heroText} variant="h2">
                 for everyday people.
               </Typography>
+              <div className={classes.buttonWrapper}>
+              <Link 
+                activeClass="active" 
+                to={ 'register' } 
+                spy={true} 
+                smooth={true} 
+                className={classes.button}
+                offset={50} 
+                duration={500} >
+                  <Button 
+                    variant="contained" 
+                    color="primary"
+                    size="large"
+                    onClick={()=>{dispatch({type: 'SET_ACTIVE_LINK', name: 'register' })}}
+                    >
+                    Get Started
+                  </Button>
+                </Link>
+              </div>
             </div>
             <div className={classes.heroParalaxWrapper}>
               <ParallaxHeroImage />

@@ -94,18 +94,25 @@ class Header extends React.Component {
     const { classes } = this.props;
 
     const links = this.props.links.map( link => (
-      link.disabled 
+      link.register 
       ?
-        <Button 
-          className={classNames([
-            classes.button,
-            classes.disabled
-          ])}
-          disableRipple={true}
+      <Link 
           key={link.name}
-          disabled={true}>
-          { link.name }
-        </Button>
+          activeClass="active" 
+          to={ link.name } 
+          spy={true} 
+          smooth={true} 
+          offset={50} 
+          onSetActive={()=>{this.context.dispatch({type: 'SET_ACTIVE_LINK', name: link.name })}}
+          duration={500} >
+            <Button 
+              color="primary"
+              variant="outlined"
+              onClick={()=>{this.context.dispatch({type: 'SET_ACTIVE_LINK', name: link.name })}}
+              key={link.name}>
+              { link.name }
+          </Button>
+        </Link>
       :
       <Link 
           key={link.name}
@@ -181,7 +188,7 @@ class Header extends React.Component {
               {
                 links.map( (link, i) => (
                   <List key={i}>														
-                    <ListItem>
+                    <ListItem >
                       { link }
                     </ListItem>
                   </List>

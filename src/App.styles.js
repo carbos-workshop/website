@@ -63,7 +63,20 @@ export const styles = makeStyles(theme => ({
   faqSection:{
     transform: 'translateY(55px)',
   },
+  registerSection: {
+    transform: 'translateY(-105px)',
+  },
   whiteScrollSection: {
     background: 'white'
   },
+  buttonWrapper: {
+    width: '100%',
+    marginTop: theme.spacing(5),
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
+  },
+  button: {
+    margin: 'auto'
+  }
 }));

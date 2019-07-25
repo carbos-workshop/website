@@ -32,7 +32,7 @@ export const styles = makeStyles(theme => ({
     },
   },
   sidenav: {
-    // background: 'black',
+    background: '#fafafa' 
   },
   button: {
     '&:hover': {
@@ -42,6 +42,9 @@ export const styles = makeStyles(theme => ({
     fontWeight: '300',
     fontSize: '24px',
     color: 'white',
+    [theme.breakpoints.down('sm')]: {
+      color:'black'
+    },
     transition: 'color .33s cubic-bezier(.5,.93,.67,.97)',
   },
   active: {
