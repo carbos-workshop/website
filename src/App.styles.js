@@ -73,10 +73,10 @@ export const styles = makeStyles(theme => ({
     width: '100%',
     marginTop: theme.spacing(5),
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center'
+    // flexDirection: 'column',
+    justifyContent: 'flex-end'
   },
   button: {
-    margin: 'auto'
+    // margin: 'auto'
   }
 }));
